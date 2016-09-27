@@ -1,5 +1,1 @@
 
-[submodule "URITemplate.swift"]
-	path = URITemplate.swift
-	url = https://github.com/tolkiana/URITemplate.swift
-	branch = swift-2.3
