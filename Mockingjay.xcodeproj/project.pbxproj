@@ -13,7 +13,6 @@
 		274367961AA27B170030C97B /* MockingjayProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367951AA27B170030C97B /* MockingjayProtocolTests.swift */; };
 		274367981AA28AFC0030C97B /* Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367971AA28AFC0030C97B /* Matchers.swift */; };
 		2743679A1AA28B0D0030C97B /* MatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367991AA28B0D0030C97B /* MatcherTests.swift */; };
-		274367AE1AA29AED0030C97B /* URITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274367A91AA29ADA0030C97B /* URITemplate.framework */; };
 		274367B01AA29E510030C97B /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367AF1AA29E510030C97B /* Builders.swift */; };
 		274367B21AA29E620030C97B /* BuildersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367B11AA29E620030C97B /* BuildersTests.swift */; };
 		274367C61AA35FD00030C97B /* NSURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274367C51AA35FD00030C97B /* NSURLSessionConfiguration.swift */; };
@@ -24,27 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		274367A81AA29ADA0030C97B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 77356D801A253325002822CF;
-			remoteInfo = URITemplate;
-		};
-		274367AA1AA29ADA0030C97B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 77356D8B1A253325002822CF;
-			remoteInfo = URITemplateTests;
-		};
-		274367AC1AA29AE70030C97B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 77356D7F1A253325002822CF;
-			remoteInfo = URITemplate;
-		};
 		2746CDCC1A702F7800719B66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2746CDB61A702F7800719B66 /* Project object */;
@@ -62,7 +40,6 @@
 		274367971AA28AFC0030C97B /* Matchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matchers.swift; sourceTree = "<group>"; };
 		274367991AA28B0D0030C97B /* MatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatcherTests.swift; sourceTree = "<group>"; };
 		2743679B1AA28D4D0030C97B /* XCTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTest.swift; sourceTree = "<group>"; };
-		274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = URITemplate.xcodeproj; path = URITemplate/URITemplate.xcodeproj; sourceTree = "<group>"; };
 		274367AF1AA29E510030C97B /* Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
 		274367B11AA29E620030C97B /* BuildersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildersTests.swift; sourceTree = "<group>"; };
 		274367C51AA35FD00030C97B /* NSURLSessionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionConfiguration.swift; sourceTree = "<group>"; };
@@ -82,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274367AE1AA29AED0030C97B /* URITemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,19 +73,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		274367A41AA29ADA0030C97B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				274367A91AA29ADA0030C97B /* URITemplate.framework */,
-				274367AB1AA29ADA0030C97B /* URITemplateTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2746CDB51A702F7800719B66 = {
 			isa = PBXGroup;
 			children = (
-				274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */,
 				2746CDDB1A702FC100719B66 /* Configurations */,
 				2746CDC11A702F7800719B66 /* Mockingjay */,
 				2746CDCE1A702F7800719B66 /* MockingjayTests */,
@@ -208,7 +174,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				274367AD1AA29AE70030C97B /* PBXTargetDependency */,
 			);
 			name = Mockingjay;
 			productName = Mockingjay;
@@ -264,12 +229,6 @@
 			mainGroup = 2746CDB51A702F7800719B66;
 			productRefGroup = 2746CDC01A702F7800719B66 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 274367A41AA29ADA0030C97B /* Products */;
-					ProjectRef = 274367A31AA29ADA0030C97B /* URITemplate.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2746CDBE1A702F7800719B66 /* Mockingjay */,
@@ -277,23 +236,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		274367A91AA29ADA0030C97B /* URITemplate.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = URITemplate.framework;
-			remoteRef = 274367A81AA29ADA0030C97B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		274367AB1AA29ADA0030C97B /* URITemplateTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = URITemplateTests.xctest;
-			remoteRef = 274367AA1AA29ADA0030C97B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2746CDBD1A702F7800719B66 /* Resources */ = {
@@ -341,11 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		274367AD1AA29AE70030C97B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = URITemplate;
-			targetProxy = 274367AC1AA29AE70030C97B /* PBXContainerItemProxy */;
-		};
 		2746CDCD1A702F7800719B66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2746CDBE1A702F7800719B66 /* Mockingjay */;
