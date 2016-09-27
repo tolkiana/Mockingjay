@@ -20,6 +20,7 @@
 		2746CDCB1A702F7800719B66 /* Mockingjay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2746CDBF1A702F7800719B66 /* Mockingjay.framework */; };
 		2746CDD21A702F7800719B66 /* MockingjayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2746CDD11A702F7800719B66 /* MockingjayTests.swift */; };
 		4B6223CC1D9AC20F00937690 /* URITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6223C81D9AC1BE00937690 /* URITemplate.framework */; };
+		4B6223CE1D9AC74200937690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6223CD1D9AC74200937690 /* XCTest.framework */; };
 		A1E3C5701AA4EA130069C998 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2743679B1AA28D4D0030C97B /* XCTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		2746CDDE1A702FC100719B66 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
 		4B6223C81D9AC1BE00937690 /* URITemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URITemplate.framework; path = Carthage/Build/iOS/URITemplate.framework; sourceTree = "<group>"; };
 		4B6223CA1D9AC1E500937690 /* URITemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URITemplate.framework; path = Carthage/Build/Mac/URITemplate.framework; sourceTree = "<group>"; };
+		4B6223CD1D9AC74200937690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6223CE1D9AC74200937690 /* XCTest.framework in Frameworks */,
 				4B6223CC1D9AC20F00937690 /* URITemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +159,7 @@
 		4B6223C71D9AC1BE00937690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B6223CD1D9AC74200937690 /* XCTest.framework */,
 				4B6223CA1D9AC1E500937690 /* URITemplate.framework */,
 				4B6223C81D9AC1BE00937690 /* URITemplate.framework */,
 			);
